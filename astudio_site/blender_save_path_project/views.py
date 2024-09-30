@@ -1,3 +1,8 @@
-from django.shortcuts import render
+from rest_framework import generics
+from .models import BlenderPathProject
+from .serializers import BlenderPathProjectSerializer
 
-# Create your views here.
+
+class BlenderPathProjectList(generics.ListCreateAPIView):
+    queryset = BlenderPathProject.objects.all()
+    serializer_class = BlenderPathProjectSerializer
