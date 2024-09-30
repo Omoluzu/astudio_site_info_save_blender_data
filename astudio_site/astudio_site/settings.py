@@ -31,6 +31,7 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'blender_save_path_project',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
