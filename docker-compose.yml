@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8000:8000"
+    environment:
+      - DEBUG=1
+    volumes:
+      - ./astudio_site/db.sqlite3:/app/astudio_site/db.sqlite3
