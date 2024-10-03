@@ -9,5 +9,6 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . /app/
 
+CMD ["python3", "astudio_site/manage.py", "migrate"]
 CMD ["python3", "astudio_site/manage.py", "runserver", "0.0.0.0:8000"]
 
